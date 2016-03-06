@@ -7,12 +7,16 @@ import com.jfinal.config.Interceptors;
 import com.jfinal.config.JFinalConfig;
 import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
+import com.jfinal.core.JFinal;
+import com.jfinal.render.ViewType;
 
 public class BaseConfig extends JFinalConfig {
 
 	@Override
 	public void configConstant(Constants me) {
-		me.setDevMode(true);
+		this.loadPropertyFile("config.properties");
+		me.setDevMode( this.getPropertyToBoolean("devMode", false) );
+		me.setViewType( ViewType.FREE_MARKER );
 	}
 
 	@Override
@@ -35,4 +39,12 @@ public class BaseConfig extends JFinalConfig {
 
 	}
 
+	/**
+	 * mian方法启动项目
+	 * @param args
+	 */
+	public static void main(String[] args){
+		JFinal.start("WebRoot", 80, "/", 5);
+	}
+	
 }
