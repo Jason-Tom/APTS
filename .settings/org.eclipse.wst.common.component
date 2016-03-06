@@ -2,7 +2,6 @@
     <wb-module deploy-name="APTS">
         <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/resource"/>
         <property name="context-root" value="APTS"/>
         <property name="java-output-path" value="/APTS/WebRoot/WEB-INF/classes"/>
     </wb-module>
