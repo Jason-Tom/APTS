@@ -1,0 +1,20 @@
+修改conf文件夹flyway.conf文件配置连接数据库，
+
+(在cmd下进入flyway文件夹目录输入)命令行用法：
+
+flyway  命令
+----------------------------------------------
+命令：
+
+名称		描述
+init		初始化
+migrate		数据库迁移
+clean		清除该数据库全部数据
+info		打印数据库迁移的详细信息
+validate		Validates the applied migrations against the ones available on the classpath
+baseline		Baselines an existing database, excluding all migrations up to and including baselineVersion
+repair		Repairs the metadata table
+
+例如：
+
+flyway  migrate
