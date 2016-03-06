@@ -1,7 +1,7 @@
 package Test;
 
 public class Test {
-    mian(){
-        
-    }
+	public static void main(String[] args) {
+		
+	}
 }
