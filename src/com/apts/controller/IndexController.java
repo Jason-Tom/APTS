@@ -5,6 +5,6 @@ import com.apts.jfinalbase.BaseController;
 public class IndexController extends BaseController {
 
 	public void index() {
-		this.renderText("啊打发");
+		this.renderText("啊打hhhhhhh发");
 	}
 }
