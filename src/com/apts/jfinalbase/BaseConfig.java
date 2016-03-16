@@ -38,7 +38,8 @@ public class BaseConfig extends JFinalConfig {
 	 */
 	@Override
 	public void configRoute(Routes me) {
-		me.add("/index", IndexController.class);
+//		me.add("/index", IndexController.class);//非根路径无法访问
+		me.add("/", IndexController.class);//最好加上根路径
 	}
 
 	/**
