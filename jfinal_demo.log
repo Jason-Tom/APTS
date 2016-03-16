@@ -178,3 +178,31 @@ Caused by: com.alibaba.druid.sql.parser.ParserException: syntax error, error in 
 	at com.alibaba.druid.wall.WallProvider.check(WallProvider.java:574)
 	at com.alibaba.druid.wall.WallFilter.check(WallFilter.java:699)
 	... 42 more
+
+2016-03-16 11:17:53
+[ERROR]-[Thread: main]-[com.jfinal.kit.LogKit.error()]: port: 80 already in use!
+java.lang.IllegalStateException: port: 80 already in use!
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:79)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:65)
+	at com.jfinal.core.JFinal.main(JFinal.java:168)
+
+2016-03-16 11:20:49
+[WARN]-[Thread: qtp1897118801-20]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: 
+
+2016-03-16 11:21:41
+[WARN]-[Thread: qtp1897118801-18]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: index
+
+2016-03-16 11:22:15
+[WARN]-[Thread: qtp1897118801-24]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: index
+
+2016-03-16 11:23:15
+[WARN]-[Thread: qtp1897118801-22]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: index
+
+2016-03-16 11:24:44
+[WARN]-[Thread: qtp295652216-22]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: index
+
+2016-03-16 11:24:48
+[WARN]-[Thread: qtp295652216-20]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: 
+
+2016-03-16 11:30:15
+[WARN]-[Thread: qtp295652216-19]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: index

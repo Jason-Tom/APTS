@@ -2,14 +2,14 @@
 
 (在cmd下进入flyway文件夹目录输入)命令行用法：
 
-flyway  命令
+flyway  命令 //后面加上具体的操作命令，执行该命令要在doc命令窗口下面运行，而且要配置基本环境，jar和基本配置文件，配置数据库路劲
 ----------------------------------------------
 命令：
 
 名称		描述
-init		初始化
-migrate		数据库迁移
-clean		清除该数据库全部数据
+init		初始化   //为的是加入了历史记录
+migrate		数据库迁移//重名和有错误的sql文件是不执行的
+clean		清除该数据库全部数据//包括历史纪录
 info		打印数据库迁移的详细信息
 validate		Validates the applied migrations against the ones available on the classpath
 baseline		Baselines an existing database, excluding all migrations up to and including baselineVersion
