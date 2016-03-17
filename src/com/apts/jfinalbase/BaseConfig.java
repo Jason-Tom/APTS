@@ -40,6 +40,7 @@ public class BaseConfig extends JFinalConfig {
 	public void configRoute(Routes me) {
 		me.add("/index", IndexController.class);//非根路径无法访问
 		me.add("/", IndexController.class);//最好加上根路径
+		//配置多个路径，即便指定同一个class文件也是不会冲突的，放置顺序也没有冲突
 		//有时会无法访问访问是因为eclipse内置配置有问题，重装即可，文件要删除干净，服务也可以删掉不碍事
 	}
 
