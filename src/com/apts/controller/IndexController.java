@@ -12,5 +12,7 @@ public class IndexController extends BaseController {
 		//		this.renderText("aa" );
 //		new TbAdmin().dao.deleteById(5); //删除id值为5的记录
 //		new TbAdmin().dao.findById(1).set("account", "James").update(); //修改数据，是findById，官方文档有错	
+		new TbAdmin();
+//		TbAdmin admin = TbAdmin.dao.findByIdLoadColumns (2, "account, password");//录入了数据之后如何读取
 	}
 }
